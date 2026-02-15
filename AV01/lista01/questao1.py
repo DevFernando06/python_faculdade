@@ -11,5 +11,3 @@ while True:
     if keep == "n":
         print("Programa encerrado.")
         break
-
-    
