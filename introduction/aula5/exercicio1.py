@@ -2,10 +2,11 @@ count = 1
 
 nomes = []
 
-while opc < 4: 
+while count < 4: 
     nome = input(f"Digite um nome {count}: ")
     nomes.append(nome)
 
-    opc +=1
+    count +=1
 
+nomes.sort()
 print(nomes)
