@@ -4,4 +4,5 @@ for i in numbers:
     if i % 2 != 0:
         numbers.remove(i)
 
-print(f"{numbers} /n {len(numbers)}")
+print(numbers)
+print(len(numbers))
