@@ -1,6 +1,11 @@
 numbers = []
 while True :
-    number = int(input("Adicione um número a lista: "))
+    try : 
+        number = int(input("Adicione um número a lista: "))
+    except ValueError :
+        print("ERRO: O número digitado não é um inteiro")
+        continue
+    
     numbers.append(number)
 
     if len(numbers) < 2:

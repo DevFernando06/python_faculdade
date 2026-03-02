@@ -1,8 +1,13 @@
 numbers = []
 while True :
-    number = int(input("Adicione um número a lista: "))
+    try : 
+        number = int(input("Adicione um número a lista: "))
+    except ValueError :
+        print("ERRO: O número digitado não é um inteiro")
+        continue
+
     if not 0 <= number <= 1000 :
-        print("[ERROR] Adicione apenas números entre 0 e 1000")
+        print("ERRO: Adicione apenas números entre 0 e 1000")
         continue
 
     numbers.append(number)
