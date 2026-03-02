@@ -5,5 +5,5 @@ while count < 6:
     numbers.append(number)
     count += 1
 
-numbers.reverse
+numbers.reverse()
 print(numbers)
